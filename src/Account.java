@@ -36,7 +36,7 @@ class AccountTest {
         }
         else
         {
-            System.out.println("Debit amount Exceeds Balance in account");
+            System.out.println("Debit amount Exceeds account balance");
         }
         return 0;
     }
