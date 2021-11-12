@@ -29,16 +29,21 @@ class AccountTest {
         /*
         * Checking debit amount lessthan Account balance using if Condition
         * */
-        if (debit<=account_Balance)
+        if(debit<=0)
+        {
+            System.out.println("Enter a valid amount");
+        }
+
+        else if (debit<=account_Balance)
         {
             balance_left = account_Balance - debit;
             return balance_left;
         }
         else
         {
-            System.out.println("Debit amount Exceeds account balance");
+            System.out.println("Debit amount Exceeds Balance in account");
         }
-        return 0;
+        return account_Balance;
     }
 }
 
